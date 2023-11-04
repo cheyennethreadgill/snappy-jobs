@@ -1,0 +1,162 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: initial;
+}
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(180, 52%, 96%);
+
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 100;
+}
+
+button {
+  padding: 0.2rem 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url('/images/bg-header-desktop.svg');
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin-top: -3rem;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: hsl(180, 29%, 50%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+h2 {
+  font-weight: 500;
+}
+h2,
+h3 {
+  color: hsl(180, 29%, 50%);
+}
+
+button,
+section,
+div {
+  border-radius: 5px;
+}
+
+section {
+  filter: drop-shadow(-1.5px 9px 10px #abc9cd);
+}
+
+.tag-button {
+  background-color: rgb(156, 156, 218);
+}
+
+.category-btn,
+.job-tag {
+  border: 0;
+  background-color: hsl(180, 46%, 91%);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  color: hsl(180, 29%, 50%);
+  font-weight: 400;
+}
+
+.categories-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: hsl(180, 52%, 96%);
+  padding: 1rem 2rem;
+  margin: -3rem auto 2rem auto;
+}
+
+.categories-container .category {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+.categories-container .category-container .category-list {
+  display: flex;
+  gap: 10px;
+}
+
+/* ----------------------------------JOBS */
+
+.job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.job-container:hover {
+  border-left: solid 5px hsl(180, 14%, 20%);
+  transform: scale(101.5%);
+}
+.jobs-section .jobs-container .job {
+  padding: 1rem 2rem;
+  margin-bottom: 1.3rem;
+  background-color: hsl(180, 52%, 96%);
+}
+
+.job .job-info {
+  flex: 1;
+}
+
+.job .job-info .job-info_stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.job .job-info .h-div {
+  display: flex;
+  gap: 0.5rem;
+}
+.job .job-info .h-div .new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10rem;
+}
+.job .job-info .h-div .featured {
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10rem;
+}
+
+.job .tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.jobs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
