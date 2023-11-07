@@ -57,6 +57,10 @@ h3 {
   color: hsl(180, 29%, 50%);
 }
 
+h3 {
+  text-transform: capitalize;
+}
+
 button,
 section,
 div {
@@ -138,7 +142,8 @@ section {
 
 .job .job-info .h-div {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
 }
 .job .job-info .h-div .new {
   background-color: hsl(180, 29%, 50%);
@@ -176,7 +181,6 @@ section {
     flex-direction: row;
   }
 
-  
   hr {
     display: none;
   }
@@ -184,6 +188,12 @@ section {
  
  /* up to ipad */
 @media screen and (max-width: 57em){
+
+  .category .spec {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
   .categories-container .category {
     flex-wrap: wrap;
 }
@@ -212,4 +222,6 @@ section {
   hr {
     display: block;
   }
+
+
  }

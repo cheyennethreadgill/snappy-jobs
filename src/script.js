@@ -53,7 +53,9 @@ window.addEventListener(
         return `
           <div class="category">
             <h3>${name}</h3>
-              ${spec}
+            <div class="spec"> 
+              ${spec} 
+            </div>
           </div>
       `;
       })
