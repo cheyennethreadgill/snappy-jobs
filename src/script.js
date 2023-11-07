@@ -101,7 +101,7 @@ function Jobs() {
       <div class='job-container'>
         <div class='job'>
         
-        <img src="${logo}" alt='${company}'>
+        <img src="${logo}" alt='${company}' class="job-img">
         
         <div class='job-info'>
           <div class='h-div'> 
@@ -118,6 +118,8 @@ function Jobs() {
             <p> ${location} </p>
           </div>
         </div>
+
+        <hr>
 
           <div class='tags'> 
             ${tools
