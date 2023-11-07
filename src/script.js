@@ -4,30 +4,9 @@ import cats from '/src/categories.js';
 const jobsContainer = document.querySelector('.jobs-container');
 const categoriesContainer = document.querySelector('.categories-container');
 
-const tags = document.querySelector('.tags');
 
 // *********************ANIMATIONS********************************
 
-var tagsArray = [];
-
-// ----------------------------------------------------TAG BUTTONS
-// var tagArray = [];
-
-// function appendTags(value) {
-//   tagArray.push(value);
-//   console.log(tagArray);
-//   let isPresent = true;
-
-//   let tagFound = tagArray.find((tag) => {
-//     if (tag == value) {
-//       return tag;
-//     }
-//   });
-
-//   const tagContents = document.createElement('p');
-//   tagContents.innerHTML = `<button> ${tagFound} </button>`;
-//   tags.appendChild(tagContents);
-// }
 
 // -------------------------------SHOW JOBS ON LOAD
 window.addEventListener(
@@ -85,14 +64,11 @@ window.addEventListener(
 function Jobs() {
   let jobsMap = jobs.map((job) => {
     const {
-      id,
       company,
       logo,
       isNew,
       featured,
       position,
-      role,
-      level,
       postedAt,
       contract,
       location,
@@ -149,15 +125,14 @@ function Jobs() {
   jobsMap = jobsMap.join('');
   jobsContainer.innerHTML = jobsMap;
 
-  (function swipeRight () {
-    let jobContainer = document.querySelector( '.job-container' )
+  (function swipeRight() {
+    let jobContainer = document.querySelector('.job-container');
 
-    jobContainer.addEventListener( 'mouseenter', animateOverlay, false )
-    function animateOverlay () {
-      jobContainer
-      
- }  })()
-  
+    jobContainer.addEventListener('mouseenter', animateOverlay, false);
+    function animateOverlay() {
+      jobContainer;
+    }
+  })();
 }
 
 // filter jobs
@@ -189,14 +164,11 @@ function filterJobs(value) {
 function ShowFilteredJobs(filteredCategoryArray) {
   let jobsMap = filteredCategoryArray.map((job) => {
     const {
-      id,
       company,
       logo,
       isNew,
       featured,
       position,
-      role,
-      level,
       postedAt,
       contract,
       location,

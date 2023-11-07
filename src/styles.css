@@ -26,7 +26,7 @@ button {
 }
 
 .container {
-  width: min(92%, 1000px);
+  width: min(87%, 1000px);
   margin: 0 auto;
 }
 
@@ -120,21 +120,9 @@ section {
   position: relative;
 }
 
-/* .job-container {
-  position: relative;
-  overflow-x: hidden;
+.job-container {
+  margin: 4rem 0 0 0;
 }
-
-.job-container .swipe-right-overlay {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  position: absolute;
-  top: 0;
-  left  : -100%;
-  z-index: 1;
-} */
 
 .job-container:hover {
   border-left: solid 5px hsl(180, 14%, 20%);
@@ -142,7 +130,7 @@ section {
 }
 .jobs-section .jobs-container .job {
   padding: 1rem 2rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 3.3rem;
   background-color: hsl(180, 52%, 96%);
 }
 
