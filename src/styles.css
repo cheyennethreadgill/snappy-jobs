@@ -120,7 +120,21 @@ section {
   position: relative;
 }
 
+/* .job-container {
+  position: relative;
+  overflow-x: hidden;
+}
 
+.job-container .swipe-right-overlay {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  left  : -100%;
+  z-index: 1;
+} */
 
 .job-container:hover {
   border-left: solid 5px hsl(180, 14%, 20%);

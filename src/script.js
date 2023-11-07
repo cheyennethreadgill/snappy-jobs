@@ -6,6 +6,8 @@ const categoriesContainer = document.querySelector('.categories-container');
 
 const tags = document.querySelector('.tags');
 
+// *********************ANIMATIONS********************************
+
 var tagsArray = [];
 
 // ----------------------------------------------------TAG BUTTONS
@@ -101,6 +103,7 @@ function Jobs() {
     return `
     
       <div class='job-container'>
+      <span class="swipe-right-overlay"> </span>
         <div class='job'>
         
         <img src="${logo}" alt='${company}' class="job-img">
@@ -145,6 +148,16 @@ function Jobs() {
 
   jobsMap = jobsMap.join('');
   jobsContainer.innerHTML = jobsMap;
+
+  (function swipeRight () {
+    let jobContainer = document.querySelector( '.job-container' )
+
+    jobContainer.addEventListener( 'mouseenter', animateOverlay, false )
+    function animateOverlay () {
+      jobContainer
+      
+ }  })()
+  
 }
 
 // filter jobs
